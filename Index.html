@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Monthly BLACKPINK</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            margin: 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .monthblock {
+            padding: 0;
+            /* display: none; */
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease;
+        }
+        
+        .monthblock:nth-child(even) {
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+        
+        .monthblock:nth-child(odd) {
+            background-color: #F8A7BB;
+            color: black;
+        }
+        
+        .monthblock h2 {
+            margin: 5px 0;
+        }
+        
+        .mag {
+            display: inline-block;
+            height: 125px;
+            width: 100px;
+            object-fit: cover;
+            box-shadow: black 0 0 5px;
+            transition: 0.3s ease;
+        }
+        
+        .mag:hover {
+            /* height: 150px;
+            width: 120px;
+            z-index: 100; */
+            transform: scale(1.2, 1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="2022">
+        <h1 onclick="trigger(this)" data-triggered="false">2022</h1>
+        <div class="monthblock">
+            <h2>JANUARY</h2>
+            <img src="./202201_jisoo_dazed_1.jpg" class="mag">
+            <img src="./202201_jisoo_dazed_2.jpg" class="mag">
+            <img src="./202201_jisoo_dazed_3.jpg" class="mag">
+            <img src="./202201_jisoo_dazed_4.jpg" class="mag">
+            <img src="./202201_jisoo_dazed_5.jpg" class="mag">
+            <img src="./202201_jisoo_dazed_6.jpg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>FEBRUARY</h2>
+            <img src="./202202_jennie_elle_1.jpg" class="mag">
+            <img src="./202202_jennie_elle_2.jpg" class="mag">
+            <img src="./202202_jennie_elle_3.jpg" class="mag">
+            <img src="./202202_jennie_elle_4.jpg" class="mag">
+            <img src="./202202_jennie_elle_5.jpg" class="mag">
+            <img src="./202202_jennie_elle_6.jpg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>MARCH</h2>
+            <img src="./202203_rosé_dazed_1.jpeg" class="mag">
+            <img src="./202203_rosé_dazed_2.jpeg" class="mag">
+            <img src="./202203_rosé_dazed_3.jpeg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>APRIL</h2>
+            <img src="./202204_jisoo_vogue_1.jpg" class="mag">
+            <img src="./202204_jisoo_vogue_2.png" class="mag">
+            <img src="./202204_jisoo_vogue_3.png" class="mag">
+            <img src="./202204_lisa_bazaar_1.png" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>MAY</h2>
+            <img src="./202205_jisoo_bazaar_1.jpg" class="mag">
+            <img src="./202205_jisoo_bazaar_2.jpg" class="mag">
+            <img src="./202205_rosé_bazaar_1.jpg" class="mag">
+            <img src="./202205_rosé_bazaar_2.png" class="mag">
+            <img src="./202205_rosé_bazaar_3.png" class="mag">
+            <img src="./202205_lisa_elle_1.jpg" class="mag">
+            <img src="./202205_lisa_elle_2.jpg" class="mag">
+            <img src="./202205_lisa_elle_3.jpg" class="mag">
+            <img src="./202205_lisa_elle_4.jpg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>JUNE</h2>
+            <img src="./202206_blackpink_rollingstone_1.jpg" class="mag">
+            <img src="./202206_blackpink_rollingstone_2.jpg" class="mag">
+            <img src="./202206_blackpink_rollingstone_3.jpg" class="mag">
+            <img src="./202206_blackpink_rollingstone_4.jpg" class="mag">
+            <img src="./202206_blackpink_rollingstone_5.jpg" class="mag">
+            <img src="./202206_rosé_elle_1.jpg" class="mag">
+            <img src="./202206_rosé_elle_2.jpg" class="mag">
+            <img src="./202206_rosé_elle_3.jpg" class="mag">
+            <img src="./202206_rosé_elle_4.jpg" class="mag">
+            <img src="./202206_rosé_vogue_1.jpeg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>JULY</h2>
+            <img src="./202207_jennie_w_1.png" class="mag">
+            <img src="./202207_jennie_w_2.jpeg" class="mag">
+            <img src="./202207_jennie_w_3.jpeg" class="mag">
+            <img src="./202207_jennie_w_4.jpeg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>AUGUST</h2>
+            <img src="./202208_lisa_marieclaire_1.jpeg" class="mag">
+            <img src="./202208_lisa_marieclaire_2.jpeg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>SEPTEMBER</h2>
+            <img src="./202209_jisoo_marieclaire_1.jpg" class="mag">
+            <img src="./202209_jisoo_marieclaire_2.jpg" class="mag">
+            <img src="./202209_jisoo_marieclaire_3.jpg" class="mag">
+            <img src="./202209_jisoo_marieclaire_4.jpg" class="mag">
+            <img src="./202209_jisoo_marieclaire_5.jpg" class="mag">
+            <img src="./202209_lisa_v_1.jpeg" class="mag">
+            <img src="./202209_lisa_v_2.jpeg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>OCTOBER</h2>
+        </div>
+        <div class="monthblock">
+            <h2>NOVEMBER</h2>
+            <img src="./202211_jennie_elle_1.jpg" class="mag">
+            <img src="./202211_jennie_elle_2.jpg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>DECEMBER</h2>
+            <img src="./202212_blackpink_time_1.jpg" class="mag">
+            <img src="./202212_jennie_elle_1.jpg" class="mag">
+            <img src="./202212_rosé_mastermind_1.jpg" class="mag">
+            <img src="./202212_rosé_vogue_1.jpg" class="mag">
+            <img src="./202212_rosé_vogue_2.jpg" class="mag">
+            <img src="./202212_rosé_vogue_3.jpg" class="mag">
+        </div>
+    </div>
+
+    <div id="2023">
+        <h1 onclick="trigger(this)" data-triggered="false">2023</h1>
+        <div class="monthblock">
+            <h2>JANUARY</h2>
+            <img src="./202301_jisoo_marieclaire_1.jpg" class="mag">
+            <img src="./202301_jisoo_marieclaire_2.jpg" class="mag">
+            <img src="./202301_jisoo_marieclaire_3.jpg" class="mag">
+            <img src="./202301_jisoo_marieclaire_4.jpg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>FEBRUARY</h2>
+            <img src="./202302_jisoo_gq_1.jpg" class="mag">
+            <img src="./202302_jisoo_gq_2.jpg" class="mag">
+            <img src="./202302_jisoo_gq_3.jpg" class="mag">
+            <img src="./202302_jennie_vogue_1.jpg" class="mag">
+            <img src="./202302_jennie_vogue_2.jpg" class="mag">
+            <img src="./202302_jennie_vogue_3.jpg" class="mag">
+            <img src="./202302_lisa_elle_1.jpg" class="mag">
+        </div>
+        <div class="monthblock">
+            <h2>MARCH</h2>
+            <img src="./202303_jisoo_vogue_1.jpeg" class="mag">
+            <img src="./202303_lisa_madamefigaro_1.png" class="mag">
+        </div>
+    </div> -->
+
+
+    <script>
+        // const h1 = document.getElementsByTagName("h1");
+        // var i;
+        // for (i = 0; i < h1.length; i++) {
+        //     h1[i].addEventListener("click", trigger(h1[i]));
+        // }~
+
+        function trigger(element) {
+            const parent = element.parentElement;
+            var divs = parent.getElementsByClassName("monthblock");
+
+            if (parent.getAttribute("data-triggered") == "true") {
+                for (div of divs) {
+                    // div.style.display = "none";
+                    div.style.maxHeight = null;
+                    div.style.padding = null;
+                }
+                parent.setAttribute("data-triggered", "false");
+
+            } else {
+                for (div of divs) {
+                    // div.style.display = "block";
+                    div.style.maxHeight = "500px";
+                    div.style.padding = "10px";
+
+                }
+                parent.setAttribute("data-triggered", "true");
+            }
+        }
+    </script>
+</body>
