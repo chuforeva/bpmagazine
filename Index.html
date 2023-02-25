@@ -55,6 +55,7 @@
 </head>
 
 <body>
+    <p id="test"></p>
     <!-- <div id="2022">
         <h1 onclick="trigger(this)" data-triggered="false">2022</h1>
         <div class="monthblock">
@@ -182,6 +183,25 @@
 
 
     <script>
+        // import data from './data.json';
+        // console.log(data);
+
+        // const response = fetch("./data.json");
+        // const json = response.json();
+        // console.log(JSON.stringify(json));
+
+        fetch("./data.json")
+            .then((res) => res.json())
+            .then((json) => {
+                document.getElementById("test").innerHTML = JSON.stringify(json);
+                for (data of json) {
+                    // console.log(JSON.stringify(data));
+                    Object.keys(data).forEach(function(key) {
+                        console.log('Key : ' + key + ', Value : ' + data[key]);
+                    });
+                }
+            });
+
         // const h1 = document.getElementsByTagName("h1");
         // var i;
         // for (i = 0; i < h1.length; i++) {

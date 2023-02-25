@@ -1,2 +1,6 @@
 화보/
 node_modules/
+.vscode/
+
+package-lock.json
+package.json
